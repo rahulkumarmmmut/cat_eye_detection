@@ -42,7 +42,7 @@ if res.boxes:
     r=5
     draw.ellipse([cx-r, cy-r, cx+r, cy+r], fill="blue")
 
-    st.image(overlay, caption="Detected left eye", use_column_width=True)
+    st.image(overlay, caption="Detected left eye", use_container_width=True)
     st.success(f"Center = ({cx:.1f}, {cy:.1f}) px")
 else:
     st.error("No left-eye detected. Try a clearer cat face.")
